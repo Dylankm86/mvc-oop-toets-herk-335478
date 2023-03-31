@@ -4,16 +4,23 @@ class ufcmodel
 {
     private $db;
 
-    public function__construct()
+    public function __construct()
     {
-       this->db = new Database();
+        $this->db = new Database();
     }
 
-
-    public function getufinfo()
+    public function getufcinfo()
     {
         $sql = "SELECT name
                         ,ranking
-                        ,length";
+                        ,length
+                        ,weigth
+                        ,age
+                        ,winsbyknockout
+                        FROM PoundForPound";
+
+             $this ->db->query($sql);
+             
+             return $this->db->resultSet();
     }
 }
