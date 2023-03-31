@@ -19,7 +19,7 @@
             <th>winsbyknockout</th>
         </thead>
         <tbody>
-
+            <?= $data['rows']; ?>
         </tbody>
     </table>
 </body>

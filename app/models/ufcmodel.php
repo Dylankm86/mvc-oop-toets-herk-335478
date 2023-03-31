@@ -14,7 +14,7 @@ class ufcmodel
         $sql = "SELECT name
                         ,ranking
                         ,length
-                        ,weigth
+                        ,weight
                         ,age
                         ,winsbyknockout
                         FROM PoundForPound";
