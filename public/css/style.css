@@ -4,3 +4,27 @@ body {
 h3 {
     color: green;
 }
+/* style.css */
+
+.ufc-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ufc-table th,
+.ufc-table td {
+    text-align: center;
+    padding: 8px;
+}
+
+.ufc-table th {
+    background-color: #f2f2f2;
+}
+
+.ufc-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ufc-table tr:hover {
+    background-color: #ddd;
+}
