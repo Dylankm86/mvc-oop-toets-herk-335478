@@ -16,7 +16,7 @@ class Database
 
         try {
             $this->dbHandler = new PDO($conn, $this->dbUser, $this->dbPass);
-            echo 'Er verbinding met de mysql-server';
+            //echo 'Er verbinding met de mysql-server';
         } catch(PDOException $e) {
             echo $e->getMessage();
         }

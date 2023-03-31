@@ -11,7 +11,7 @@ class ufc extends basecontroller
 
     public function index()
     {
-        $result = $this->ufcmodel->getufinfo();
+        $result = $this->ufcmodel->getufcinfo();
         
         $rows = '';
         foreach ($result as $ufcranking ) {
@@ -20,7 +20,7 @@ class ufc extends basecontroller
                 <td>$ufcranking->name</td>
                 <td>$ufcranking->ranking</td>
                 <td>$ufcranking->length</td>
-                <td>$ufcranking->weigth</td>
+                <td>$ufcranking->weight</td>
                 <td>$ufcranking->age</td>
                 <td>$ufcranking->winsbyknockout</td>
             </tr>";
